@@ -1,7 +1,5 @@
 networks:
-  #The presence of these objects is sufficient to define them
-expense: []
-external: true
+ expense: {}
 volumes:
  mysql:
 services:
