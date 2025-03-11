@@ -11,7 +11,7 @@ WORKDIR /opt/backend
 COPY  package.json ./
 COPY *.js ./
 RUN npm install
-#ENV DB_HOST="localhost" 
+ENV DB_HOST="localhost" 
 USER expense
 #because we are using host network
 CMD ["node", "index.js"]
